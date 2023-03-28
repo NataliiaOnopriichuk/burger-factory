@@ -1,0 +1,29 @@
+// text
+$mainTextColor: #2a2a2a;
+$accentTextColor: #008bf6;
+
+// background
+$mainBgnColor: #ffffff;
+$secondaryBgnColor: #f5f5f5;
+$btnColor: #00b3fa;
+$hoverBtnColor: #0098f7;
+$secondaryBtnColor: #f6e224;
+$hoverSecondaryBtnColor: #ee9c10;
+
+// shadow
+$boxShadow: 0px 3px 6px #00000029;
+
+// decor
+$decorShadow: transparent linear-gradient(270deg, #ffffff 0%, #ffffff00 100%) 0%
+  0% no-repeat padding-box;
+
+// animation
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1366px;
+$to-mobile: 320px;
+$to-tablet: 767px;
+$to-desktop: 1365px;
