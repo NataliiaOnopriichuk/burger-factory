@@ -5,12 +5,12 @@
     {
       "src": "burger.png",
       "type": "image/png",
-      "sizes": "64x64 32x32 24x24 16x16"
+      "sizes": "36x36 24x24 16x16"
     },
     {
       "src": "burger2x.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "72x72"
     }
   ],
   "start_url": ".",

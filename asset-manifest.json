@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.ee2e0853.css",
-    "main.js": "/react-homework-template/static/js/main.18a22a16.js",
+    "main.css": "/react-homework-template/static/css/main.55449839.css",
+    "main.js": "/react-homework-template/static/js/main.f768e63d.js",
     "static/media/Poppins-Regular.ttf": "/react-homework-template/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Bold.ttf": "/react-homework-template/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "static/media/Poppins-Black.ttf": "/react-homework-template/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
+    "static/media/logo@2x.png": "/react-homework-template/static/media/logo@2x.0612cabe59918cdba40b.png",
+    "static/media/logo.png": "/react-homework-template/static/media/logo.d201e9ef2dcdcb505309.png",
     "index.html": "/react-homework-template/index.html",
-    "main.ee2e0853.css.map": "/react-homework-template/static/css/main.ee2e0853.css.map",
-    "main.18a22a16.js.map": "/react-homework-template/static/js/main.18a22a16.js.map"
+    "main.55449839.css.map": "/react-homework-template/static/css/main.55449839.css.map",
+    "main.f768e63d.js.map": "/react-homework-template/static/js/main.f768e63d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee2e0853.css",
-    "static/js/main.18a22a16.js"
+    "static/css/main.55449839.css",
+    "static/js/main.f768e63d.js"
   ]
 }
