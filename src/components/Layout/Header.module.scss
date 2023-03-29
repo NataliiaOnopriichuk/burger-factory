@@ -1,0 +1,29 @@
+@import '../../styles/vars';
+
+.header {
+  position: sticky;
+  z-index: 9;
+  top: 0;
+
+  width: 100%;
+
+  background-color: $mainBgnColor;
+  box-shadow: $boxShadow;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+
+  margin-left: 102px;
+  padding: 50px 0;
+
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button {
+  margin-left: auto;
+}

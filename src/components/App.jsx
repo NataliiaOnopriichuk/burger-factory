@@ -1,9 +1,12 @@
-import { Container } from './Container/Container';
+import { Layout } from './Layout/Layout';
 
 export const App = () => {
   return (
-    <Container>
-      <div>React homework template</div>
-    </Container>
+    <Layout>
+      <section id="Ingridient">1</section>
+      <section id="Story">2</section>
+      <section id="Burgers">3</section>
+      <section id="Location">4</section>
+    </Layout>
   );
 };
