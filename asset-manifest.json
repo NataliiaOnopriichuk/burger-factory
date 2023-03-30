@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.75e2a8e5.css",
-    "main.js": "/react-homework-template/static/js/main.203afea8.js",
+    "main.css": "/react-homework-template/static/css/main.09ff7750.css",
+    "main.js": "/react-homework-template/static/js/main.8203a8f2.js",
+    "static/media/map@2x.jpg": "/react-homework-template/static/media/map@2x.0673893e80c2c6a2acb0.jpg",
     "static/media/burger@2x.png": "/react-homework-template/static/media/burger@2x.4f7d44a81a1d04f16d6f.png",
     "static/media/Poppins-Regular.ttf": "/react-homework-template/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Bold.ttf": "/react-homework-template/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "static/media/Poppins-Black.ttf": "/react-homework-template/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
     "static/media/burger-on-board@2x.jpg": "/react-homework-template/static/media/burger-on-board@2x.fa0d317e0de164a72360.jpg",
+    "static/media/map.jpg": "/react-homework-template/static/media/map.c59744e645f79adf5afd.jpg",
     "static/media/burger-bun@2x.png": "/react-homework-template/static/media/burger-bun@2x.150bf42e237242db68f2.png",
     "static/media/tomato@2x.png": "/react-homework-template/static/media/tomato@2x.fa69e81ab23708a4e82a.png",
     "static/media/cheese@2x.png": "/react-homework-template/static/media/cheese@2x.f63fcfa2b016de0ff58c.png",
@@ -26,11 +28,12 @@
     "static/media/slick.ttf": "/react-homework-template/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/react-homework-template/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/react-homework-template/index.html",
-    "main.75e2a8e5.css.map": "/react-homework-template/static/css/main.75e2a8e5.css.map",
-    "main.203afea8.js.map": "/react-homework-template/static/js/main.203afea8.js.map"
+    "static/media/bgnHero.svg": "/react-homework-template/static/media/bgnHero.7999e05ebe9e0fc56e5c3e19f2b9463e.svg",
+    "main.09ff7750.css.map": "/react-homework-template/static/css/main.09ff7750.css.map",
+    "main.8203a8f2.js.map": "/react-homework-template/static/js/main.8203a8f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.75e2a8e5.css",
-    "static/js/main.203afea8.js"
+    "static/css/main.09ff7750.css",
+    "static/js/main.8203a8f2.js"
   ]
 }
