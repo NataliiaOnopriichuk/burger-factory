@@ -1,23 +1,34 @@
-import { Section } from 'components/Section/Section';
-import style from './Burgers.module.scss';
+import { memo, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import burger from '../assets/images/png/burger.png';
-import burger2x from '../assets/images/png/burger@2x.png';
+import { Section } from 'components/Section/Section';
 import { Button } from 'components/Button/Button';
+import { Details } from 'Details/Details';
+import { burgers } from '../utils/burgers.js';
+import style from './Burgers.module.scss';
 
-const burgers = [
-  { name: '1/4 Pound Cheese', url: burger, url2x: burger2x },
-  { name: 'Big Burger', url: burger, url2x: burger2x },
-  { name: 'Pure Bacon', url: burger, url2x: burger2x },
-];
+export const Burgers = memo(() => {
+  const [selectedBurger, setSelectedBurger] = useState(null);
 
-export const Burgers = () => {
+  const handleDetailsClick = index => {
+    if (selectedBurger === index) {
+      setSelectedBurger(null);
+    } else {
+      setSelectedBurger(index);
+    }
+  };
+
   return (
     <>
       <Section id="Burgers" title="Burgers">
         <div className={style.wrapper}>
-          {burgers.map(({ name, url, url2x }) => (
-            <div key={uuidv4()} className={style.inner}>
+          {burgers.map(({ name, url, url2x }, index) => (
+            <div
+              key={uuidv4()}
+              className={`${style.inner} ${
+                selectedBurger === index ? style.details : ''
+              }`}
+              onClick={() => handleDetailsClick(index)}
+            >
               <p className={style.subtitle}>{name}</p>
               <img
                 className={style.img}
@@ -25,12 +36,19 @@ export const Burgers = () => {
                 srcSet={`${url} 1x, ${url2x} 2x`}
                 alt={name}
               />
-              <button className={style.btn}>Details</button>
+              {selectedBurger === index ? (
+                <>
+                  <Details />
+                  <button className={style.btn}>Reduce</button>
+                </>
+              ) : (
+                <button className={style.btn}>Details</button>
+              )}
             </div>
           ))}
         </div>
-        <Button title="Order Now" />
+        <Button title="Order Now" type="order" />
       </Section>
     </>
   );
-};
+});

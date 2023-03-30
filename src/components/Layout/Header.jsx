@@ -21,7 +21,7 @@ export const Header = () => {
           </ul>
         </nav>
         <div className={style.button}>
-          <Button title="Order Now" />
+          <Button title="Order Now" type="order" />
         </div>
       </Logo>
     </header>

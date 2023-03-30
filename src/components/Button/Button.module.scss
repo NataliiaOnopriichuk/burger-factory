@@ -1,6 +1,6 @@
 @import '../../styles/vars';
 
-.button {
+.inner {
   display: inline-block;
   padding: 9px 24px;
 
@@ -10,21 +10,33 @@
   text-align: center;
   letter-spacing: 0px;
 
-  background-color: $btnColor;
   color: inherit;
   border: none;
   border-radius: 5px;
 
   transition: $animation;
 
-  &:hover,
-  &:focus {
-    background-color: $hoverBtnColor;
-  }
-
   @media screen and (min-width: $tablet) {
     font-size: 18px;
     padding: 9px 32px;
     border-radius: 10px;
+  }
+}
+.button {
+  background-color: $btnColor;
+
+  &:hover,
+  &:focus {
+    background-color: $hoverBtnColor;
+  }
+}
+
+.buttonHero {
+  background-color: $secondaryBtnColor;
+  padding: 8px 26px;
+
+  &:hover,
+  &:focus {
+    background-color: $hoverSecondaryBtnColor;
   }
 }

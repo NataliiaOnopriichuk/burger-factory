@@ -12,12 +12,16 @@
   flex-direction: column;
 
   width: 100%;
+  height: 408px;
   padding: 20px;
 
   background-color: $mainBgnColor;
   box-shadow: $boxShadow;
 
   border-radius: 26px;
+
+  overflow: hidden;
+  transition: $animation;
 }
 
 .subtitle {
@@ -45,4 +49,8 @@
 
   font-size: inherit;
   font-weight: 700;
+}
+
+.details {
+  height: 100%;
 }

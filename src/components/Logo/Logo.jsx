@@ -14,7 +14,7 @@ export const Logo = ({ children, type }) => {
   return (
     <Container>
       <div className={wrapperClass}>
-        <Link to="Ingridient" smooth={true} duration={200}>
+        <Link to="Hero" smooth={true} duration={200} offset={-130}>
           <img src={logo} srcSet={`${logo} 1x, ${logo2x} 2x`} alt="logo" />
         </Link>
         {children}
