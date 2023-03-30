@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.cd11ab57.css",
-    "main.js": "/react-homework-template/static/js/main.18324943.js",
+    "main.css": "/react-homework-template/static/css/main.facacf02.css",
+    "main.js": "/react-homework-template/static/js/main.892c977a.js",
     "static/media/Poppins-Regular.ttf": "/react-homework-template/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Bold.ttf": "/react-homework-template/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "static/media/Poppins-Black.ttf": "/react-homework-template/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
+    "static/media/burger-on-board@2x.jpg": "/react-homework-template/static/media/burger-on-board@2x.fa0d317e0de164a72360.jpg",
     "static/media/burger-bun@2x.png": "/react-homework-template/static/media/burger-bun@2x.150bf42e237242db68f2.png",
     "static/media/tomato@2x.png": "/react-homework-template/static/media/tomato@2x.fa69e81ab23708a4e82a.png",
     "static/media/cheese@2x.png": "/react-homework-template/static/media/cheese@2x.f63fcfa2b016de0ff58c.png",
@@ -12,6 +13,7 @@
     "static/media/meat@2x.png": "/react-homework-template/static/media/meat@2x.053211b6d65091ebcb70.png",
     "static/media/logo@2x.png": "/react-homework-template/static/media/logo@2x.0612cabe59918cdba40b.png",
     "static/media/burger-bun.png": "/react-homework-template/static/media/burger-bun.f3b9dfa91d285cf70322.png",
+    "static/media/burger-on-board.jpg": "/react-homework-template/static/media/burger-on-board.e684ca169dfd24458304.jpg",
     "static/media/tomato.png": "/react-homework-template/static/media/tomato.7dccf39214626203bd88.png",
     "static/media/salad.png": "/react-homework-template/static/media/salad.a8bae3bd3c11b4e34a70.png",
     "static/media/cheese.png": "/react-homework-template/static/media/cheese.8e7be0089b32275207db.png",
@@ -22,11 +24,11 @@
     "static/media/slick.ttf": "/react-homework-template/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/react-homework-template/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/react-homework-template/index.html",
-    "main.cd11ab57.css.map": "/react-homework-template/static/css/main.cd11ab57.css.map",
-    "main.18324943.js.map": "/react-homework-template/static/js/main.18324943.js.map"
+    "main.facacf02.css.map": "/react-homework-template/static/css/main.facacf02.css.map",
+    "main.892c977a.js.map": "/react-homework-template/static/js/main.892c977a.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd11ab57.css",
-    "static/js/main.18324943.js"
+    "static/css/main.facacf02.css",
+    "static/js/main.892c977a.js"
   ]
 }
