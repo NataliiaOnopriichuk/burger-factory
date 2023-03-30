@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  gap: 49px;
+}
+
+.inner {
+  text-align: left;
+}
+
+.title {
+  margin-bottom: 20px;
+
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.48;
+}
+
+.subtitle {
+  width: 600px;
+
+  margin-bottom: 65px;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.46;
+}
+
+.content {
+  line-height: 1.5;
+}
+
+.thumb {
+  min-height: 441px;
+  min-width: 635px;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+
+  border-radius: 30px;
+
+  object-fit: cover;
+}

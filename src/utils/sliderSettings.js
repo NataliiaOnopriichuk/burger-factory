@@ -3,7 +3,6 @@ export const settings = {
     autoplay: true,
     slidesToScroll: 1,
     initialSlide: 0,
-    // accessibility: true,
     arrows: false,
     dots: false,
     responsive: [
