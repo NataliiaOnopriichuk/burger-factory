@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.09ff7750.css",
-    "main.js": "/react-homework-template/static/js/main.8203a8f2.js",
+    "main.css": "/react-homework-template/static/css/main.5ad550c6.css",
+    "main.js": "/react-homework-template/static/js/main.2c6c2b21.js",
+    "static/media/hero@2x.png": "/react-homework-template/static/media/hero@2x.2cf059fe390ccd8b74d3.png",
     "static/media/map@2x.jpg": "/react-homework-template/static/media/map@2x.0673893e80c2c6a2acb0.jpg",
+    "static/media/hero.png": "/react-homework-template/static/media/hero.e913fc3f43b74831911f.png",
     "static/media/burger@2x.png": "/react-homework-template/static/media/burger@2x.4f7d44a81a1d04f16d6f.png",
     "static/media/Poppins-Regular.ttf": "/react-homework-template/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Bold.ttf": "/react-homework-template/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
@@ -28,12 +30,12 @@
     "static/media/slick.ttf": "/react-homework-template/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/react-homework-template/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/react-homework-template/index.html",
-    "static/media/bgnHero.svg": "/react-homework-template/static/media/bgnHero.7999e05ebe9e0fc56e5c3e19f2b9463e.svg",
-    "main.09ff7750.css.map": "/react-homework-template/static/css/main.09ff7750.css.map",
-    "main.8203a8f2.js.map": "/react-homework-template/static/js/main.8203a8f2.js.map"
+    "static/media/bgnHero.svg": "/react-homework-template/static/media/bgnHero.7999e05ebe9e0fc56e5c.svg",
+    "main.5ad550c6.css.map": "/react-homework-template/static/css/main.5ad550c6.css.map",
+    "main.2c6c2b21.js.map": "/react-homework-template/static/js/main.2c6c2b21.js.map"
   },
   "entrypoints": [
-    "static/css/main.09ff7750.css",
-    "static/js/main.8203a8f2.js"
+    "static/css/main.5ad550c6.css",
+    "static/js/main.2c6c2b21.js"
   ]
 }
