@@ -13,7 +13,7 @@ export const Header = () => {
           <ul className={style.list}>
             {titleList.map(el => (
               <li key={uuidv4()}>
-                <Link to={el} smooth={true} duration={200}>
+                <Link to={el} smooth={true} duration={200} offset={-130}>
                   {el}
                 </Link>
               </li>
