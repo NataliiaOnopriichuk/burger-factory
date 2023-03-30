@@ -1,3 +1,4 @@
+import { Burgers } from 'Burgers/Burgers';
 import { Story } from 'Story/Story';
 import { Ingredients } from './Ingredients/Ingredients';
 import { Layout } from './Layout/Layout';
@@ -8,10 +9,7 @@ export const App = () => {
     <Layout>
       <Ingredients />
       <Story />
-
-      <Section id="Burgers" title="Burgers">
-        3
-      </Section>
+      <Burgers />
       <Section id="Location" title="Location">
         4
       </Section>
