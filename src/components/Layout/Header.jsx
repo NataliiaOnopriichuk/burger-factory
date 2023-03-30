@@ -5,7 +5,7 @@ import { Logo } from 'components/Logo/Logo';
 import style from './Header.module.scss';
 
 export const Header = () => {
-  const titleList = ['Ingridient', 'Story', 'Burgers', 'Location'];
+  const titleList = ['Ingredients', 'Story', 'Burgers', 'Location'];
   return (
     <header className={style.header}>
       <Logo type="header">

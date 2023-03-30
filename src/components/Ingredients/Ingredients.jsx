@@ -5,7 +5,7 @@ import style from './Ingredients.module.scss';
 export const Ingredients = () => {
   return (
     <>
-      <Section id="Ingridient" title="Ingredients">
+      <Section id="Ingredients" title="Ingredients">
         <p className={style.subtitle}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis
           id arcu vel maximus.
