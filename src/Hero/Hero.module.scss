@@ -12,8 +12,12 @@
   margin-left: auto;
   margin-right: auto;
 
+  @media screen and (min-width: $tablet2) and (max-width: $to-tablet) {
+    margin-bottom: 120px;
+  }
+
   @media screen and (min-width: $tablet) {
-    margin-bottom: 140px;
+    margin-bottom: 180px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -29,18 +33,33 @@
   align-items: flex-start;
   gap: 20px;
 
-  padding-top: 142px;
-  padding-bottom: 232px;
+  // padding-top: 142px;
+  // padding-bottom: 232px;
+
+  @media screen and (min-width: $tablet2) and (max-width: $to-tablet) {
+    padding-top: 120px;
+    padding-bottom: 123px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 142px;
+    padding-bottom: 213px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 232px;
+  }
 }
 
 .title {
   // font-size: 64px;
   font-weight: 900;
-  @media screen and (min-width: $tablet) {
-    font-size: 55px;
+
+  @media screen and (min-width: $tablet2) and (max-width: $to-tablet) {
+    font-size: 45px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     font-size: 64px;
   }
 }
@@ -48,8 +67,9 @@
 .subtitle {
   @include font($fontSize: 18px);
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet2) and (max-width: $to-tablet) {
     font-size: 22px;
+    width: 303px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -62,6 +82,10 @@
   // height: 646px;
   top: 49px;
   right: 0px;
+
+  @media screen and (min-width: $tablet2) {
+    height: 430px;
+  }
 
   @media screen and (min-width: $tablet) {
     height: 550px;

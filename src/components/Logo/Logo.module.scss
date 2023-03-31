@@ -11,3 +11,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+.link {
+  @media screen and (min-width: $tablet2) {
+    width: 150px;
+  }
+}

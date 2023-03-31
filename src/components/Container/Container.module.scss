@@ -10,6 +10,10 @@
     width: $mobile;
   }
 
+  @media screen and (min-width: $tablet2) {
+    width: $tablet2;
+  }
+
   @media screen and (min-width: $tablet) {
     width: $tablet;
   }

@@ -2,14 +2,20 @@
 @import '../../styles/mixins';
 
 .subtitle {
-  width: 680px;
+  // width: 680px;
   margin: 0 auto;
   margin-top: 20px;
 
   @include font($fontSize: 18px);
 
+  @media screen and (min-width: $tablet2) and (max-width: $to-tablet) {
+    font-size: 20px;
+    width: 547px;
+  }
+
   @media screen and (min-width: $tablet) {
     font-size: 22px;
+    width: 680px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -18,8 +24,16 @@
 }
 
 .content {
-  width: 790px;
+  // width: 790px;
   margin: 0 auto;
 
   line-height: 1.5;
+
+  @media screen and (min-width: $tablet2) and (max-width: $to-tablet) {
+    width: 625px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 790px;
+  }
 }

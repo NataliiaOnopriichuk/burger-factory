@@ -4,11 +4,11 @@
 .mySlider {
   position: relative;
 
-  // width: 1205px;
+  width: 500px;
   margin: 0 auto;
 
-  // @media screen and (max-width: $to-mobile) {
-  //   width: 360px;
+  // @media screen and (min-width: $mobile) {
+  //   width: 400px;
   // }
 
   @media screen and (min-width: $tablet) {
@@ -41,9 +41,9 @@
 
 div[class='slick-track'] {
   display: flex;
-  // gap: 52px;
+  gap: 30px;
 
-  // padding: 50px 0;
+  padding: 30px 0;
 
   @media screen and (min-width: $tablet) {
     gap: 30px;

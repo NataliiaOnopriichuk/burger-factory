@@ -9,10 +9,15 @@
 
 .list {
   @include flexed();
-  gap: 30px;
+  // gap: 30px;
 
   margin: 30px 0;
   @include font($fontSize: 18px);
+
+  @media screen and (min-width: $tablet2) and (max-width: $to-tablet) {
+    margin: 20px 0;
+    gap: 15px;
+  }
 
   @media screen and (min-width: $tablet) {
     font-size: 20px;
@@ -32,6 +37,10 @@
 
   // height: 483px;
   // width: 860px;
+  @media screen and (min-width: $tablet2) and (max-width: $to-tablet) {
+    height: 350px;
+    width: 600px;
+  }
 
   @media screen and (min-width: $tablet) {
     height: 400px;
@@ -66,6 +75,13 @@
   border-radius: 50%;
   box-shadow: $boxShadow;
   background-color: $mainBgnColor;
+
+  @media screen and (min-width: $tablet2) and (max-width: $to-tablet) {
+    height: 40px;
+    width: 40px;
+    top: 130px;
+    left: 240px;
+  }
 
   @media screen and (min-width: $tablet) {
     top: 147px;
