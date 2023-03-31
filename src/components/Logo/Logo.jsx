@@ -11,11 +11,16 @@ export const Logo = ({ children, type }) => {
     [style.inner]: type === 'footer',
   });
 
+  const linkClass = clsx({
+    [style.link]: true,
+    [style.padding]: type === 'footer',
+  });
+
   return (
     <Container>
       <div className={wrapperClass}>
         <Link
-          className={style.link}
+          className={linkClass}
           to="Hero"
           smooth={true}
           duration={200}

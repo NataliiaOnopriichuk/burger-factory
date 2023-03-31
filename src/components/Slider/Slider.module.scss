@@ -4,12 +4,16 @@
 .mySlider {
   position: relative;
 
-  width: 500px;
+  width: 290px;
   margin: 0 auto;
 
-  // @media screen and (min-width: $mobile) {
-  //   width: 400px;
-  // }
+  @media screen and (min-width: 350px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: $tablet2) {
+    width: 700px;
+  }
 
   @media screen and (min-width: $tablet) {
     width: 1000px;

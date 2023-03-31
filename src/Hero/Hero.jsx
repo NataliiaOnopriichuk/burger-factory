@@ -1,3 +1,4 @@
+// import { useMedia } from 'react-use';
 import style from './Hero.module.scss';
 import { Button } from 'components/Button/Button';
 import { Container } from 'components/Container/Container';
@@ -6,6 +7,8 @@ import burger2x from '../assets/images/png/hero@2x.png';
 import { Link } from 'react-scroll';
 
 export const Hero = () => {
+  // const isMobile = useMedia('(max-width: 767px)');
+
   return (
     <div className={style.hero} id="Hero">
       <Container>

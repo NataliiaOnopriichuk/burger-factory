@@ -3,12 +3,15 @@
 
 .wrapper {
   display: flex;
-  gap: 49px;
 
-  @media screen and (min-width: $tablet2) and (max-width: $to-tablet) {
+  @media screen and (max-width: $to-tablet) {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+  }
+
+  @media screen and (min-width: $to-tablet) {
+    gap: 49px;
   }
 }
 
@@ -18,15 +21,17 @@
 
 .title {
   margin-bottom: 20px;
+  text-align: center;
 
-  @include font(900, 45px);
+  @include font(900, 40px);
 
   @media screen and (min-width: $tablet2) and (max-width: $to-tablet) {
-    text-align: center;
+    font-size: 45px;
   }
 
   @media screen and (min-width: $tablet) {
     font-size: 55px;
+    text-align: left;
   }
 
   @media screen and (min-width: $desktop) {
@@ -35,20 +40,24 @@
 }
 
 .subtitle {
-  // margin-bottom: 65px;
+  text-align: center;
+  margin: 0 auto 25px;
 
   @include font($fontSize: 18px);
 
+  @media screen and (min-width: 400px) {
+    width: 400px;
+  }
+
   @media screen and (min-width: $tablet2) and (max-width: $to-tablet) {
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
     width: 580px;
   }
 
   @media screen and (min-width: $tablet) {
     font-size: 22px;
     margin-bottom: 45px;
+    text-align: left;
   }
 
   @media screen and (min-width: $desktop) {
@@ -59,16 +68,19 @@
 
 .content {
   line-height: 1.5;
+  text-align: center;
+  font-size: 16px;
 
-  @media screen and (min-width: $tablet2) and (max-width: $to-tablet) {
-    text-align: center;
+  @media screen and (min-width: $tablet2) {
+    font-size: inherit;
+  }
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
   }
 }
 
 .thumb {
-  // min-height: 441px;
-  // min-width: 635px;
-
   @media screen and (min-width: $tablet2) and (max-width: $to-tablet) {
     min-height: 400px;
     min-width: 335px;
