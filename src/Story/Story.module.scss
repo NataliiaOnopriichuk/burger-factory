@@ -1,3 +1,6 @@
+@import '../styles/vars';
+@import '../styles/mixins';
+
 .wrapper {
   display: flex;
   gap: 49px;
@@ -10,19 +13,31 @@
 .title {
   margin-bottom: 20px;
 
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 1.48;
+  @include font(900, 45px);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 55px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 64px;
+  }
 }
 
 .subtitle {
-  width: 600px;
+  // margin-bottom: 65px;
 
-  margin-bottom: 65px;
+  @include font($fontSize: 18px);
 
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.46;
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+    margin-bottom: 45px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+    margin-bottom: 65px;
+  }
 }
 
 .content {
@@ -30,8 +45,18 @@
 }
 
 .thumb {
-  min-height: 441px;
-  min-width: 635px;
+  // min-height: 441px;
+  // min-width: 635px;
+
+  @media screen and (min-width: $tablet) {
+    min-height: 400px;
+    min-width: 435px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-height: 441px;
+    min-width: 635px;
+  }
 }
 
 .image {

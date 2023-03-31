@@ -1,3 +1,6 @@
+@import '../styles/vars';
+@import '../styles/mixins';
+
 .hero {
   background-image: url(../assets/svg/bgnHero.svg);
   background-position: center;
@@ -5,9 +8,17 @@
   background-repeat: no-repeat;
 
   max-width: 1920px;
-  margin-bottom: 241px;
+  // margin-bottom: 241px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 140px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 241px;
+  }
 }
 
 .content {
@@ -23,19 +34,40 @@
 }
 
 .title {
-  font-size: 64px;
+  // font-size: 64px;
   font-weight: 900;
+  @media screen and (min-width: $tablet) {
+    font-size: 55px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 64px;
+  }
 }
 
 .subtitle {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.46;
+  @include font($fontSize: 18px);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+  }
 }
 
 .img {
   position: absolute;
-  height: 646px;
+  // height: 646px;
   top: 49px;
   right: 0px;
+
+  @media screen and (min-width: $tablet) {
+    height: 550px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 646px;
+  }
 }

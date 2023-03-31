@@ -9,8 +9,8 @@ export const settings = {
         {
             breakpoint: 1025,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToShow: 3,
+                slidesToScroll: 1,
             },
         },
         {

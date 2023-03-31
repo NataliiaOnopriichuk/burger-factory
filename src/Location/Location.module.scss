@@ -1,4 +1,5 @@
 @import '../styles/vars';
+@import '../styles/mixins';
 
 .wrapper {
   display: flex;
@@ -7,26 +8,40 @@
 }
 
 .list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexed();
   gap: 30px;
 
   margin: 30px 0;
+  @include font($fontSize: 18px);
 
-  font-size: 24px;
-  line-height: 1.46;
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+  }
 }
 
-.item:first-child {
-  font-weight: 700;
+.item:not(:first-child) {
+  font-weight: 400;
 }
 
 .thumb {
   position: relative;
 
-  height: 483px;
-  width: 860px;
+  // height: 483px;
+  // width: 860px;
+
+  @media screen and (min-width: $tablet) {
+    height: 400px;
+    width: 700px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 483px;
+    width: 860px;
+  }
 }
 
 .image {
@@ -40,8 +55,8 @@
 
 .map {
   position: absolute;
-  top: 176px;
-  left: 339px;
+  // top: 176px;
+  // left: 339px;
 
   height: 50px;
   width: 50px;
@@ -51,4 +66,14 @@
   border-radius: 50%;
   box-shadow: $boxShadow;
   background-color: $mainBgnColor;
+
+  @media screen and (min-width: $tablet) {
+    top: 147px;
+    left: 286px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 176px;
+    left: 339px;
+  }
 }
