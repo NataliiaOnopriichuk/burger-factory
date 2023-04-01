@@ -1,4 +1,4 @@
-import { Burgers } from 'Burgers/Burgers';
+import { Burgers } from 'components/Burgers/Burgers';
 import { Hero } from 'Hero/Hero';
 import { Location } from 'Location/Location';
 import { Story } from 'Story/Story';

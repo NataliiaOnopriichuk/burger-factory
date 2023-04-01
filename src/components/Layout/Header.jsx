@@ -1,57 +1,42 @@
 import { useMedia } from 'react-use';
+import { useState } from 'react';
 import { Button } from 'components/Button/Button';
 import { Logo } from 'components/Logo/Logo';
-import style from './Header.module.scss';
-import { useState } from 'react';
-import { RxHamburgerMenu } from 'react-icons/rx';
+import { MobileMenu } from 'MobileMenu/MobileMenu';
 import { SiteNav } from 'SiteNav/SiteNav';
-import { RxCross1 } from 'react-icons/rx';
+import style from './Header.module.scss';
+import { navList } from 'utils/navList';
 
 export const Header = () => {
   const isMobile = useMedia('(max-width: 767px)');
 
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState(navList[0]);
 
-  const handleMenuClick = () => {
+  const toggleModal = () => {
     setIsBurgerMenuOpen(!isBurgerMenuOpen);
+  };
+
+  const handleLinkClick = el => {
+    setActiveLink(el);
+    isMobile && toggleModal();
   };
 
   return (
     <header className={style.header}>
-      <Logo type="header">
+      <Logo type="header" active={setActiveLink}>
         {!isMobile && (
           <>
-            <SiteNav />
+            <SiteNav activeLink={activeLink} close={handleLinkClick} />
             <div className={style.button}>
               <Button title="Order Now" type="order" />
             </div>
           </>
         )}
         {isMobile && (
-          <nav>
-            <button
-              type="button"
-              className={style.menu}
-              onClick={handleMenuClick}
-            >
-              <RxHamburgerMenu />
-            </button>
-          </nav>
-        )}
-        {isMobile && isBurgerMenuOpen && (
-          <div className={style.backdrop}>
-            <div className={style.modal}>
-              <button
-                type="button"
-                className={style.cross}
-                onClick={handleMenuClick}
-              >
-                <RxCross1 />
-              </button>
-              <SiteNav type="menu" close={handleMenuClick} />
-              <Button title="Order Now" type="order" />
-            </div>
-          </div>
+          <MobileMenu
+            {...{ isBurgerMenuOpen, toggleModal, activeLink, handleLinkClick }}
+          />
         )}
       </Logo>
     </header>

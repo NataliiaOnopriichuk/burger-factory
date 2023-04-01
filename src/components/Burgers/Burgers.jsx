@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { Section } from 'components/Section/Section';
 import { Button } from 'components/Button/Button';
 import { Details } from 'Details/Details';
-import { burgers } from '../utils/burgers.js';
+import { burgers } from '../../utils/burgers.js';
 import style from './Burgers.module.scss';
 
 export const Burgers = memo(() => {

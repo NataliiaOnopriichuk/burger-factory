@@ -1,38 +1,26 @@
+import PropTypes from 'prop-types';
 import { Link } from 'react-scroll';
 import { v4 as uuidv4 } from 'uuid';
 import clsx from 'clsx';
-import { useState } from 'react';
 import style from './SiteNav.module.scss';
-import { useMedia } from 'react-use';
+import { navList } from 'utils/navList';
 
-const titleList = ['Ingredients', 'Story', 'Burgers', 'Location'];
-
-export const SiteNav = ({ type, close }) => {
-  const [activeLink, setActiveLink] = useState(titleList[0]);
-  const isMobile = useMedia('(max-width: 767px)');
-
+export const SiteNav = ({ type, activeLink, close }) => {
   const listClass = clsx({
     [style.list]: true,
     [style.menu]: type === 'menu',
   });
 
-  const handleLinkClick = el => {
-    !isMobile && setActiveLink(el);
-    isMobile && close();
-  };
-
   return (
     <nav>
       <ul className={listClass}>
-        {titleList.map(el => (
+        {navList.map(el => (
           <li key={uuidv4()}>
             <Link
               className={clsx({
                 [style.activeLink]: activeLink === el,
               })}
-              onClick={() => {
-                handleLinkClick(el);
-              }}
+              onClick={() => close(el)}
               to={el}
               smooth={true}
               duration={200}
@@ -45,4 +33,10 @@ export const SiteNav = ({ type, close }) => {
       </ul>
     </nav>
   );
+};
+
+SiteNav.propTypes = {
+  type: PropTypes.string,
+  activeLink: PropTypes.string.isRequired,
+  close: PropTypes.func.isRequired,
 };

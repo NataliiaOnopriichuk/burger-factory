@@ -1,7 +1,7 @@
 import React from 'react';
+import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import style from './Button.module.scss';
-import clsx from 'clsx';
 
 export const Button = ({ title, type }) => {
   const buttonClass = clsx({
@@ -18,4 +18,5 @@ export const Button = ({ title, type }) => {
 
 Button.propTypes = {
   title: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
 };
