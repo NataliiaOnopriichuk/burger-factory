@@ -1,42 +1,27 @@
 import { useMedia } from 'react-use';
-import { Link } from 'react-scroll';
-import { v4 as uuidv4 } from 'uuid';
 import { Button } from 'components/Button/Button';
 import { Logo } from 'components/Logo/Logo';
 import style from './Header.module.scss';
 import { useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { SiteNav } from 'SiteNav/SiteNav';
+import { RxCross1 } from 'react-icons/rx';
 
 export const Header = () => {
   const isMobile = useMedia('(max-width: 767px)');
 
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
 
-  const handleBurgerMenuClick = () => {
-    setIsBurgerMenuOpen(true);
+  const handleMenuClick = () => {
+    setIsBurgerMenuOpen(!isBurgerMenuOpen);
   };
 
-  const handleCloseModalClick = () => {
-    setIsBurgerMenuOpen(false);
-  };
-
-  const titleList = ['Ingredients', 'Story', 'Burgers', 'Location'];
   return (
     <header className={style.header}>
       <Logo type="header">
         {!isMobile && (
           <>
-            <nav>
-              <ul className={style.list}>
-                {titleList.map(el => (
-                  <li key={uuidv4()}>
-                    <Link to={el} smooth={true} duration={200} offset={-130}>
-                      {el}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            <SiteNav />
             <div className={style.button}>
               <Button title="Order Now" type="order" />
             </div>
@@ -47,11 +32,26 @@ export const Header = () => {
             <button
               type="button"
               className={style.menu}
-              onClick={handleBurgerMenuClick}
+              onClick={handleMenuClick}
             >
               <RxHamburgerMenu />
             </button>
           </nav>
+        )}
+        {isMobile && isBurgerMenuOpen && (
+          <div className={style.backdrop}>
+            <div className={style.modal}>
+              <button
+                type="button"
+                className={style.cross}
+                onClick={handleMenuClick}
+              >
+                <RxCross1 />
+              </button>
+              <SiteNav type="menu" close={handleMenuClick} />
+              <Button title="Order Now" type="order" />
+            </div>
+          </div>
         )}
       </Logo>
     </header>

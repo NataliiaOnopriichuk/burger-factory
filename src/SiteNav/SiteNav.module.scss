@@ -1,0 +1,40 @@
+@import '../styles/mixins';
+@import '../styles/vars';
+
+.list {
+  @include flexed();
+  flex-direction: column;
+  gap: 30px;
+
+  margin-left: 40px;
+  padding: 50px 0;
+
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet2) {
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 30px;
+    font-size: 16px;
+    padding: 40px 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    gap: 40px;
+    margin-left: 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    gap: 70px;
+    margin-left: 102px;
+  }
+}
+
+.menu {
+  margin-left: 0;
+}
+
+.activeLink {
+  color: $accentTextColor;
+}
