@@ -2,8 +2,8 @@ import { Link } from 'react-scroll';
 import { Button } from 'components/Button/Button';
 import { Container } from 'components/Container/Container';
 import style from './Hero.module.scss';
-import burger from '../assets/images/png/hero.png';
-import burger2x from '../assets/images/png/hero@2x.png';
+import burger from '../../assets/images/png/hero.png';
+import burger2x from '../../assets/images/png/hero@2x.png';
 
 export const Hero = () => {
   return (

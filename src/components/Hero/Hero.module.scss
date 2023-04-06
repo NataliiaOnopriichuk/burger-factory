@@ -1,8 +1,8 @@
-@import '../styles/vars';
-@import '../styles/mixins';
+@import '../../styles/vars';
+@import '../../styles/mixins';
 
 .hero {
-  background-image: url(../assets/svg/bgnHero.svg);
+  background-image: url(../../assets/svg/bgnHero.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

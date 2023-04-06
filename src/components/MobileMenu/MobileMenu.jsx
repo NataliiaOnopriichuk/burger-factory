@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { memo } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { RxCross1 } from 'react-icons/rx';
-import { SiteNav } from 'SiteNav/SiteNav';
+import { SiteNav } from 'components/SiteNav/SiteNav';
 import { Button } from 'components/Button/Button';
 import style from './MobileMenu.module.scss';
 

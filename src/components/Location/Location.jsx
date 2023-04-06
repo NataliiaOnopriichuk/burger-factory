@@ -1,9 +1,9 @@
 import { Section } from 'components/Section/Section';
 import style from './Location.module.scss';
-import map from '../assets/images/jpeg/map.jpg';
-import map2x from '../assets/images/jpeg/map@2x.jpg';
-import logo from '../assets/images/png/burger.png';
-import logo2x from '../assets/images/png/burger@2x.png';
+import map from '../../assets/images/jpeg/map.jpg';
+import map2x from '../../assets/images/jpeg/map@2x.jpg';
+import logo from '../../assets/images/png/burger.png';
+import logo2x from '../../assets/images/png/burger@2x.png';
 
 export const Location = () => {
   return (

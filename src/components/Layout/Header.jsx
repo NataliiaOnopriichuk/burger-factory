@@ -2,8 +2,8 @@ import { useMedia } from 'react-use';
 import { useState } from 'react';
 import { Button } from 'components/Button/Button';
 import { Logo } from 'components/Logo/Logo';
-import { MobileMenu } from 'MobileMenu/MobileMenu';
-import { SiteNav } from 'SiteNav/SiteNav';
+import { MobileMenu } from 'components/MobileMenu/MobileMenu';
+import { SiteNav } from 'components/SiteNav/SiteNav';
 import style from './Header.module.scss';
 import { navList } from 'utils/navList';
 

@@ -1,7 +1,7 @@
 import { Section } from 'components/Section/Section';
 import style from './Story.module.scss';
-import burger from '../assets/images/jpeg/burger-on-board.jpg';
-import burger2x from '../assets/images/jpeg/burger-on-board@2x.jpg';
+import burger from '../../assets/images/jpeg/burger-on-board.jpg';
+import burger2x from '../../assets/images/jpeg/burger-on-board@2x.jpg';
 
 export const Story = () => {
   return (
